@@ -1,25 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
+import Profil from './profile/profil';
+import myPicture from './profile/Mypicture.jpg'
 
 function App() {
+  var Fullname="ahmed ben kahla"
+
+  // var Bio
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Profil name={Fullname} ben kahla bio={"Hello! I'am   a student in GOMY CODE school  "} age={16}> <img src={myPicture} alt="" style={{width:"500px",height:"500px"}}></img></Profil>
     </div>
   );
 }
 
 export default App;
+
+
